@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar Matrix | RMU.news</title>
+   <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><span>RMU.</span>news</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="register.html">Tickets</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <div id="calendar-root">
+        <main>
+            <h1 class="section-title">Temporal Matrix</h1>
+            <div class="calendar-wrapper">
+                <div class="calendar-box">
+                    <div class="cal-header">
+                        <button id="prevMonth" class="btn-ghost" style="width:auto">&lt;</button>
+                        <h2 id="month-label">Loading...</h2>
+                        <button id="nextMonth" class="btn-ghost" style="width:auto">&gt;</button>
+                    </div>
+                    <div class="weekdays">
+                        <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+                    </div>
+                    <div id="calendar-grid" class="days-grid"></div>
+                </div>
+
+                <div class="info-panel">
+                    <h3>Data Log</h3>
+                    <p style="color:#888; margin-bottom:10px;">Select a highlighted date to view details.</p>
+                    <div id="date-info">
+                        <!-- Details appear here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer><p>Akitha Rathnayake DRCK &copy; 2024 RMU. news</p></footer>
+</body>
+</html>

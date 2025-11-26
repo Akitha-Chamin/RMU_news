@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Broadcasts | RMU.news</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo"><span>RMU.</span>news</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="register.html">Tickets</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Identifier for JS -->
+    <div id="news-root">
+        <main>
+            <h1 class="section-title">Weekly Broadcasts</h1>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <p style="color: var(--text-muted); margin-bottom: 30px;">
+                    Latest updates regarding school protocols, schedules, and maintenance.
+                </p>
+
+                <!-- News Items Injected Here by JS -->
+                <div id="news-list"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Akitha Rathnayake DRCK &copy; 2025 RMU. news</p>
+    </footer>
+
+</body>
+</html>

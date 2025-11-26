@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Events | RMU.news</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><span>RMU.</span>news</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="register.html">Tickets</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <div id="events-root">
+        <main>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;">
+                <h1 class="section-title" style="margin-bottom:0">All Event Logs</h1>
+                <select id="type-filter" style="background:black; color:white; padding:10px; border:1px solid var(--neon-blue);">
+                    <option value="all">Display All</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Art">Art</option>
+                    <option value="Academic">Academic</option>
+                </select>
+            </div>
+            
+            <div id="events-grid" class="grid-container">
+                <!-- JS Injected -->
+            </div>
+        </main>
+    </div>
+    
+    <footer><p>Akitha Rathnayake DRCK &copy; 2024 RMU. news</p></footer>
+</body>
+</html>

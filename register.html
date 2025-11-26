@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Registration | RMU.news</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><span>RMU.</span>news</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="register.html" class="active">Tickets</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <div id="register-root">
+        <main>
+            <h1 class="section-title">Acquire Access Pass</h1>
+            
+            <div class="form-container fade-in-up">
+                <div class="form-header">
+                    <h2>Registration Terminal</h2>
+                    <p>Enter student details to generate QR entry pass.</p>
+                </div>
+
+                <form id="ticket-form">
+                    <div class="form-grid">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label>Cadet Name</label>
+                            <input type="text" class="form-input" placeholder="John Doe" required>
+                        </div>
+
+                        <!-- ID Number -->
+                        <div class="form-group">
+                            <label>Student ID</label>
+                            <input type="text" class="form-input" placeholder="SH-2024-XXX" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label>Comm Link (Email)</label>
+                            <input type="email" class="form-input" placeholder="student@RMU..edu" required>
+                        </div>
+
+                        <!-- Event Selection (Filled by JS) -->
+                        <div class="form-group">
+                            <label>Target Event</label>
+                            <select id="event-select" class="form-input">
+                                <!-- Options injected by JS -->
+                            </select>
+                        </div>
+
+                        <!-- Ticket Count -->
+                        <div class="form-group">
+                            <label>Pass Quantity</label>
+                            <input type="number" class="form-input" min="1" max="5" value="1">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button type="submit" class="btn-neon" style="width: 100%;">Generate Pass</button>
+                    </div>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="form-success" style="display:none; text-align:center; margin-top:20px;">
+                    <h3 style="color:var(--neon-blue)">ACCESS GRANTED</h3>
+                    <p>Ticket sent to registered Comm Link.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Akitha Rathnayake DRCK &copy; 2025 RMU. news</p>
+    </footer>
+
+</body>
+</html>
